@@ -1,0 +1,31 @@
+{
+  "name": "vertex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:script1": "npx playwright test --grep \"Script 1\"",
+    "test:script2": "npx playwright test --grep \"Script 2\"",
+    "test:script3": "npx playwright test --grep \"Script 3\"",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "test:single": "npx playwright test --grep",
+    "jira:update": "node scripts/jira-update.js",
+    "jira:update:dry": "node scripts/jira-update.js --dry-run",
+    "test:rerun-failed": "node scripts/rerun-failed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0",
+    "dotenv": "^17.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "xlsx": "^0.18.5"
+  }
+}
